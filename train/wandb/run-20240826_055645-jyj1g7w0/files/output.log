@@ -1,0 +1,65 @@
+
+  0%|                                                                                                                                                         | 0/10000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py", line 1171, in <module>
+    train()
+  File "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py", line 1127, in train
+    trainer.train()
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/trainer.py", line 2772, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/trainer.py", line 2795, in compute_loss
+    outputs = model(**inputs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 200, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 110, in parallel_apply
+    output.reraise()
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+torch.cuda.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in _worker
+    output = module(*input, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/wenhan/Projects/LLaVA/llava/model/language_model/llava_llama.py", line 91, in forward
+    return super().forward(
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1183, in forward
+    outputs = self.model(
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1070, in forward
+    layer_outputs = decoder_layer(
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 812, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 268, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 393, in forward
+    return F.silu(input, inplace=self.inplace)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/nn/functional.py", line 2072, in silu
+    return torch._C._nn.silu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 152.00 MiB. GPU 0 has a total capacty of 11.90 GiB of which 152.88 MiB is free. Including non-PyTorch memory, this process has 11.74 GiB memory in use. Of the allocated memory 11.13 GiB is allocated by PyTorch, and 370.20 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

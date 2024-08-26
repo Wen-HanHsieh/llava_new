@@ -1,0 +1,78 @@
+2024-08-13 09:19:10,221 INFO    StreamThr :1615810 [internal.py:wandb_internal():85] W&B internal server running at pid: 1615810, started at: 2024-08-13 09:19:10.221066
+2024-08-13 09:19:10,222 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: status
+2024-08-13 09:19:10,225 INFO    WriterThread:1615810 [datastore.py:open_for_write():87] open: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/run-2rncdrvx.wandb
+2024-08-13 09:19:10,226 DEBUG   SenderThread:1615810 [sender.py:send():391] send: header
+2024-08-13 09:19:10,233 DEBUG   SenderThread:1615810 [sender.py:send():391] send: run
+2024-08-13 09:19:10,417 INFO    SenderThread:1615810 [dir_watcher.py:__init__():211] watching files in: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files
+2024-08-13 09:19:10,417 INFO    SenderThread:1615810 [sender.py:_start_run_threads():1200] run started: 2rncdrvx with start time 1723540750.222274
+2024-08-13 09:19:10,440 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: check_version
+2024-08-13 09:19:10,440 DEBUG   SenderThread:1615810 [sender.py:send_request():418] send_request: check_version
+2024-08-13 09:19:10,491 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: run_start
+2024-08-13 09:19:10,527 DEBUG   HandlerThread:1615810 [system_info.py:__init__():26] System info init
+2024-08-13 09:19:10,527 DEBUG   HandlerThread:1615810 [system_info.py:__init__():41] System info init done
+2024-08-13 09:19:10,527 INFO    HandlerThread:1615810 [system_monitor.py:start():194] Starting system monitor
+2024-08-13 09:19:10,527 INFO    SystemMonitor:1615810 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-13 09:19:10,528 INFO    HandlerThread:1615810 [system_monitor.py:probe():214] Collecting system info
+2024-08-13 09:19:10,528 INFO    SystemMonitor:1615810 [interfaces.py:start():188] Started cpu monitoring
+2024-08-13 09:19:10,529 INFO    SystemMonitor:1615810 [interfaces.py:start():188] Started disk monitoring
+2024-08-13 09:19:10,530 INFO    SystemMonitor:1615810 [interfaces.py:start():188] Started gpu monitoring
+2024-08-13 09:19:10,532 INFO    SystemMonitor:1615810 [interfaces.py:start():188] Started memory monitoring
+2024-08-13 09:19:10,533 INFO    SystemMonitor:1615810 [interfaces.py:start():188] Started network monitoring
+2024-08-13 09:19:10,588 DEBUG   HandlerThread:1615810 [system_info.py:probe():152] Probing system
+2024-08-13 09:19:10,592 DEBUG   HandlerThread:1615810 [system_info.py:_probe_git():137] Probing git
+2024-08-13 09:19:10,605 DEBUG   HandlerThread:1615810 [system_info.py:_probe_git():145] Probing git done
+2024-08-13 09:19:10,605 DEBUG   HandlerThread:1615810 [system_info.py:probe():200] Probing system done
+2024-08-13 09:19:10,605 DEBUG   HandlerThread:1615810 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-31-generic-x86_64-with-glibc2.39', 'python': '3.10.14', 'heartbeatAt': '2024-08-13T09:19:10.588285', 'startedAt': '2024-08-13T09:19:10.210533', 'docker': None, 'cuda': None, 'args': ('--num_train_epochs', '1', '--output_dir', './output', '--data_path', 'pub11-train-{0000..0031}.tar', '--image_folder', '/home/davidchan/data/remote-sensing/RS5M_v5/train/', '--is_multimodal', 'True', '--data_format', 'wds'), 'state': 'running', 'program': '/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py', 'codePathLocal': 'train.py', 'codePath': 'llava/train/train.py', 'git': {'remote': 'https://github.com/haotian-liu/LLaVA', 'commit': 'c121f0432da27facab705978f83c4ada465e46fd'}, 'email': None, 'root': '/home/wenhan/Projects/LISA/model/llava_new/LLaVA', 'host': 'basilisk', 'username': 'wenhan', 'executable': '/home/wenhan/anaconda3/envs/llava_env/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1651.50709375, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 1200.232, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2400.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1199.946, 'min': 1200.0, 'max': 3600.0}, {'current': 1333.126, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2200.7, 'min': 1200.0, 'max': 3600.0}, {'current': 1742.113, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.452, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2400.021, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2044.195, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2403.357, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 446.630859375, 'used': 72.5457878112793}}, 'gpu': 'NVIDIA TITAN Xp', 'gpu_count': 9, 'gpu_devices': [{'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}], 'memory': {'total': 94.27408218383789}}
+2024-08-13 09:19:10,605 INFO    HandlerThread:1615810 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-13 09:19:10,605 INFO    HandlerThread:1615810 [system_monitor.py:probe():227] Publishing system info
+2024-08-13 09:19:10,606 DEBUG   HandlerThread:1615810 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-13 09:19:11,419 INFO    Thread-12 :1615810 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files/conda-environment.yaml
+2024-08-13 09:19:13,419 INFO    Thread-12 :1615810 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files/conda-environment.yaml
+2024-08-13 09:19:13,428 DEBUG   HandlerThread:1615810 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-13 09:19:13,430 INFO    HandlerThread:1615810 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-13 09:19:13,435 DEBUG   SenderThread:1615810 [sender.py:send():391] send: files
+2024-08-13 09:19:13,435 INFO    SenderThread:1615810 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-13 09:19:13,705 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-13 09:19:13,706 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-13 09:19:13,706 DEBUG   SenderThread:1615810 [sender.py:send_request():418] send_request: python_packages
+2024-08-13 09:19:13,706 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:13,708 DEBUG   SenderThread:1615810 [sender.py:send_request():418] send_request: stop_status
+2024-08-13 09:19:13,809 DEBUG   SenderThread:1615810 [sender.py:send():391] send: telemetry
+2024-08-13 09:19:13,809 DEBUG   SenderThread:1615810 [sender.py:send():391] send: config
+2024-08-13 09:19:13,810 DEBUG   SenderThread:1615810 [sender.py:send():391] send: telemetry
+2024-08-13 09:19:13,811 DEBUG   SenderThread:1615810 [sender.py:send():391] send: metric
+2024-08-13 09:19:13,811 DEBUG   SenderThread:1615810 [sender.py:send():391] send: telemetry
+2024-08-13 09:19:13,811 DEBUG   SenderThread:1615810 [sender.py:send():391] send: metric
+2024-08-13 09:19:13,811 WARNING SenderThread:1615810 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-08-13 09:19:13,812 INFO    wandb-upload_0:1615810 [upload_job.py:push():130] Uploaded file /tmp/tmpguo9voaewandb/gidmdd0v-wandb-metadata.json
+2024-08-13 09:19:13,812 DEBUG   SenderThread:1615810 [sender.py:send():391] send: telemetry
+2024-08-13 09:19:14,420 INFO    Thread-12 :1615810 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files/requirements.txt
+2024-08-13 09:19:14,420 INFO    Thread-12 :1615810 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files/wandb-metadata.json
+2024-08-13 09:19:14,420 INFO    Thread-12 :1615810 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files/output.log
+2024-08-13 09:19:14,706 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:15,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:15,805 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: status_report
+2024-08-13 09:19:16,422 INFO    Thread-12 :1615810 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240813_091910-2rncdrvx/files/output.log
+2024-08-13 09:19:16,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:17,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:18,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:19,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:20,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:21,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: status_report
+2024-08-13 09:19:21,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:22,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:23,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:24,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:25,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:26,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:27,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: status_report
+2024-08-13 09:19:27,707 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:28,706 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-13 09:19:28,706 DEBUG   SenderThread:1615810 [sender.py:send_request():418] send_request: stop_status
+2024-08-13 09:19:28,747 DEBUG   HandlerThread:1615810 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-13 09:19:32,549 INFO    cpu       :1615810 [interfaces.py:monitor():138] Process cpu has exited.
+2024-08-13 09:19:32,550 DEBUG   SystemMonitor:1615810 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-13 09:19:32,550 DEBUG   SystemMonitor:1615810 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-13 09:19:32,550 DEBUG   SystemMonitor:1615810 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-13 09:19:32,552 DEBUG   SenderThread:1615810 [sender.py:send():391] send: stats
+2024-08-13 09:19:33,497 INFO    MainThread:1615810 [internal.py:handle_exit():75] Internal process exited

@@ -1,0 +1,26 @@
+  0%|                                                                                                                                                         | 0/10000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py", line 1150, in <module>
+    train()
+  File "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py", line 1111, in train
+    trainer.train()
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/transformers/trainer.py", line 1836, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/accelerate/data_loader.py", line 384, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    index = self._next_index()  # may raise StopIteration
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 620, in _next_index
+    return next(self._sampler_iter)  # may raise StopIteration
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/utils/data/sampler.py", line 282, in __iter__
+    for idx in self.sampler:
+  File "/home/wenhan/anaconda3/envs/llava_env/lib/python3.10/site-packages/torch/utils/data/sampler.py", line 110, in __iter__
+    return iter(range(len(self.data_source)))
+  File "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py", line 877, in __len__
+    return len(self._dataset)
+  File "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py", line 729, in __len__
+    return len(self._base_dataset)
+TypeError: object of type 'WebDataset' has no len()

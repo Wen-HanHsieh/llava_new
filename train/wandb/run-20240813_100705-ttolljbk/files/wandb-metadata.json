@@ -1,0 +1,253 @@
+{
+    "os": "Linux-6.8.0-31-generic-x86_64-with-glibc2.39",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-08-13T10:07:05.509043",
+    "startedAt": "2024-08-13T10:07:05.027022",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--num_train_epochs",
+        "1",
+        "--output_dir",
+        "./output",
+        "--data_path",
+        "pub11-train-{0000..0031}.tar",
+        "--image_folder",
+        "/home/davidchan/data/remote-sensing/RS5M_v5/train/",
+        "--is_multimodal",
+        "True",
+        "--data_format",
+        "wds"
+    ],
+    "state": "running",
+    "program": "/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "llava/train/train.py",
+    "git": {
+        "remote": "https://github.com/haotian-liu/LLaVA",
+        "commit": "c121f0432da27facab705978f83c4ada465e46fd"
+    },
+    "email": null,
+    "root": "/home/wenhan/Projects/LISA/model/llava_new/LLaVA",
+    "host": "basilisk",
+    "username": "wenhan",
+    "executable": "/home/wenhan/anaconda3/envs/llava_env/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1709.5346875000002,
+        "min": 1200.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.158,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.116,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1834.441,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1199.948,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1927.154,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.793,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1206.792,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1201.194,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1700.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2302.306,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3235.294,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1761.739,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2299.884,
+            "min": 1200.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 446.630859375,
+            "used": 72.55363845825195
+        }
+    },
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 9,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN Xp",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 94.27408218383789
+    }
+}

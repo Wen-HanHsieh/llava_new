@@ -1,0 +1,197 @@
+2024-08-25 23:14:44,196 INFO    StreamThr :1165665 [internal.py:wandb_internal():85] W&B internal server running at pid: 1165665, started at: 2024-08-25 23:14:44.195423
+2024-08-25 23:14:44,197 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: status
+2024-08-25 23:14:44,202 INFO    WriterThread:1165665 [datastore.py:open_for_write():87] open: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/run-ka08mvs3.wandb
+2024-08-25 23:14:44,203 DEBUG   SenderThread:1165665 [sender.py:send():391] send: header
+2024-08-25 23:14:44,222 DEBUG   SenderThread:1165665 [sender.py:send():391] send: run
+2024-08-25 23:14:44,470 INFO    SenderThread:1165665 [dir_watcher.py:__init__():211] watching files in: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files
+2024-08-25 23:14:44,470 INFO    SenderThread:1165665 [sender.py:_start_run_threads():1200] run started: ka08mvs3 with start time 1724627684.198338
+2024-08-25 23:14:44,492 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: check_version
+2024-08-25 23:14:44,493 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: check_version
+2024-08-25 23:14:44,544 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: run_start
+2024-08-25 23:14:44,578 DEBUG   HandlerThread:1165665 [system_info.py:__init__():26] System info init
+2024-08-25 23:14:44,578 DEBUG   HandlerThread:1165665 [system_info.py:__init__():41] System info init done
+2024-08-25 23:14:44,578 INFO    HandlerThread:1165665 [system_monitor.py:start():194] Starting system monitor
+2024-08-25 23:14:44,578 INFO    SystemMonitor:1165665 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-25 23:14:44,579 INFO    HandlerThread:1165665 [system_monitor.py:probe():214] Collecting system info
+2024-08-25 23:14:44,579 INFO    SystemMonitor:1165665 [interfaces.py:start():188] Started cpu monitoring
+2024-08-25 23:14:44,580 INFO    SystemMonitor:1165665 [interfaces.py:start():188] Started disk monitoring
+2024-08-25 23:14:44,582 INFO    SystemMonitor:1165665 [interfaces.py:start():188] Started gpu monitoring
+2024-08-25 23:14:44,583 INFO    SystemMonitor:1165665 [interfaces.py:start():188] Started memory monitoring
+2024-08-25 23:14:44,583 INFO    SystemMonitor:1165665 [interfaces.py:start():188] Started network monitoring
+2024-08-25 23:14:44,639 DEBUG   HandlerThread:1165665 [system_info.py:probe():152] Probing system
+2024-08-25 23:14:44,643 DEBUG   HandlerThread:1165665 [system_info.py:_probe_git():137] Probing git
+2024-08-25 23:14:44,657 DEBUG   HandlerThread:1165665 [system_info.py:_probe_git():145] Probing git done
+2024-08-25 23:14:44,657 DEBUG   HandlerThread:1165665 [system_info.py:probe():200] Probing system done
+2024-08-25 23:14:44,657 DEBUG   HandlerThread:1165665 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-31-generic-x86_64-with-glibc2.39', 'python': '3.10.14', 'heartbeatAt': '2024-08-25T23:14:44.639713', 'startedAt': '2024-08-25T23:14:44.183518', 'docker': None, 'cuda': None, 'args': ('--num_train_epochs', '1', '--output_dir', './output', '--data_path', 'pub11-train-{0000..0031}.tar', '--image_folder', '/home/davidchan/data/remote-sensing/RS5M_v5/train/', '--is_multimodal', 'True', '--data_format', 'wds', '--max_steps', '10000'), 'state': 'running', 'program': '/home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/train.py', 'codePathLocal': 'train.py', 'codePath': 'llava/train/train.py', 'git': {'remote': 'https://github.com/haotian-liu/LLaVA', 'commit': 'c121f0432da27facab705978f83c4ada465e46fd'}, 'email': 'hense54321@gmail.com', 'root': '/home/wenhan/Projects/LISA/model/llava_new/LLaVA', 'host': 'basilisk', 'username': 'wenhan', 'executable': '/home/wenhan/anaconda3/envs/llava_env/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1626.5199062500003, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 1200.039, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.067, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.176, 'min': 1200.0, 'max': 3600.0}, {'current': 1634.136, 'min': 1200.0, 'max': 3600.0}, {'current': 2299.914, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.497, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2400.422, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2402.658, 'min': 1200.0, 'max': 3600.0}, {'current': 2281.715, 'min': 1200.0, 'max': 3600.0}, {'current': 1260.175, 'min': 1200.0, 'max': 3600.0}, {'current': 2800.338, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 446.630859375, 'used': 72.91715621948242}}, 'gpu': 'NVIDIA TITAN Xp', 'gpu_count': 9, 'gpu_devices': [{'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN Xp', 'memory_total': 12884901888}], 'memory': {'total': 94.27408218383789}}
+2024-08-25 23:14:44,658 INFO    HandlerThread:1165665 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-25 23:14:44,658 INFO    HandlerThread:1165665 [system_monitor.py:probe():227] Publishing system info
+2024-08-25 23:14:44,658 DEBUG   HandlerThread:1165665 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-08-25 23:14:45,472 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/conda-environment.yaml
+2024-08-25 23:14:47,732 DEBUG   HandlerThread:1165665 [system_info.py:_save_conda():224] Saving conda packages done
+2024-08-25 23:14:47,734 INFO    HandlerThread:1165665 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-25 23:14:47,742 DEBUG   SenderThread:1165665 [sender.py:send():391] send: files
+2024-08-25 23:14:47,742 INFO    SenderThread:1165665 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-25 23:14:48,010 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-25 23:14:48,010 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: python_packages
+2024-08-25 23:14:48,011 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 23:14:48,011 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-25 23:14:48,012 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: stop_status
+2024-08-25 23:14:48,098 DEBUG   SenderThread:1165665 [sender.py:send():391] send: telemetry
+2024-08-25 23:14:48,098 DEBUG   SenderThread:1165665 [sender.py:send():391] send: config
+2024-08-25 23:14:48,100 DEBUG   SenderThread:1165665 [sender.py:send():391] send: telemetry
+2024-08-25 23:14:48,101 DEBUG   SenderThread:1165665 [sender.py:send():391] send: metric
+2024-08-25 23:14:48,101 DEBUG   SenderThread:1165665 [sender.py:send():391] send: telemetry
+2024-08-25 23:14:48,101 DEBUG   SenderThread:1165665 [sender.py:send():391] send: metric
+2024-08-25 23:14:48,101 WARNING SenderThread:1165665 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-08-25 23:14:48,101 DEBUG   SenderThread:1165665 [sender.py:send():391] send: telemetry
+2024-08-25 23:14:48,104 DEBUG   SenderThread:1165665 [sender.py:send():391] send: exit
+2024-08-25 23:14:48,104 INFO    SenderThread:1165665 [sender.py:send_exit():598] handling exit code: 1
+2024-08-25 23:14:48,104 INFO    SenderThread:1165665 [sender.py:send_exit():600] handling runtime: 3
+2024-08-25 23:14:48,106 INFO    SenderThread:1165665 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 23:14:48,107 INFO    SenderThread:1165665 [sender.py:send_exit():606] send defer
+2024-08-25 23:14:48,107 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:48,107 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-25 23:14:48,108 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:48,108 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-08-25 23:14:48,108 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 1
+2024-08-25 23:14:48,108 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:48,108 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-25 23:14:48,109 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:48,109 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-08-25 23:14:48,109 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 2
+2024-08-25 23:14:48,109 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:48,109 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-25 23:14:48,110 INFO    HandlerThread:1165665 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-25 23:14:48,110 DEBUG   SystemMonitor:1165665 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-25 23:14:48,111 DEBUG   SystemMonitor:1165665 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-25 23:14:48,111 INFO    HandlerThread:1165665 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-25 23:14:48,111 DEBUG   SystemMonitor:1165665 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-25 23:14:48,112 INFO    HandlerThread:1165665 [interfaces.py:finish():200] Joined disk monitor
+2024-08-25 23:14:48,192 INFO    wandb-upload_0:1165665 [upload_job.py:push():130] Uploaded file /tmp/tmpww95l97iwandb/oxt3w8rx-wandb-metadata.json
+2024-08-25 23:14:48,472 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/conda-environment.yaml
+2024-08-25 23:14:48,473 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/wandb-metadata.json
+2024-08-25 23:14:48,473 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/output.log
+2024-08-25 23:14:48,474 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/wandb-summary.json
+2024-08-25 23:14:48,474 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_created():271] file/dir created: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/requirements.txt
+2024-08-25 23:14:49,061 INFO    HandlerThread:1165665 [interfaces.py:finish():200] Joined gpu monitor
+2024-08-25 23:14:49,062 INFO    HandlerThread:1165665 [interfaces.py:finish():200] Joined memory monitor
+2024-08-25 23:14:49,062 INFO    HandlerThread:1165665 [interfaces.py:finish():200] Joined network monitor
+2024-08-25 23:14:49,062 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 23:14:49,063 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:49,063 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-08-25 23:14:49,063 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 3
+2024-08-25 23:14:49,064 DEBUG   SenderThread:1165665 [sender.py:send():391] send: stats
+2024-08-25 23:14:49,064 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 23:14:49,065 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:49,065 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-25 23:14:49,066 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:49,066 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-08-25 23:14:49,066 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 4
+2024-08-25 23:14:49,066 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:49,066 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-25 23:14:49,067 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:49,067 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-08-25 23:14:49,067 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 5
+2024-08-25 23:14:49,067 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:49,067 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-25 23:14:49,068 DEBUG   SenderThread:1165665 [sender.py:send():391] send: summary
+2024-08-25 23:14:49,069 INFO    SenderThread:1165665 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-25 23:14:49,069 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:49,069 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-08-25 23:14:49,070 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 6
+2024-08-25 23:14:49,070 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:49,070 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-25 23:14:49,070 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:49,070 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-08-25 23:14:49,076 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: status_report
+2024-08-25 23:14:49,249 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 7
+2024-08-25 23:14:49,250 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:49,250 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-25 23:14:49,250 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:49,250 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-08-25 23:14:49,473 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/config.yaml
+2024-08-25 23:14:49,474 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/wandb-summary.json
+2024-08-25 23:14:50,061 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 23:14:50,117 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 8
+2024-08-25 23:14:50,117 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 23:14:50,118 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:50,118 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-25 23:14:50,119 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:50,119 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-08-25 23:14:50,119 INFO    SenderThread:1165665 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-25 23:14:50,122 INFO    SenderThread:1165665 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-25 23:14:50,172 INFO    SenderThread:1165665 [job_builder.py:build():545] adding wandb-job metadata file
+2024-08-25 23:14:50,179 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 9
+2024-08-25 23:14:50,180 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:50,180 DEBUG   SenderThread:1165665 [sender.py:send():391] send: artifact
+2024-08-25 23:14:50,180 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-25 23:14:50,474 INFO    Thread-12 :1165665 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/output.log
+2024-08-25 23:14:50,584 INFO    SenderThread:1165665 [sender.py:send_artifact():1549] sent artifact job-https___github.com_haotian-liu_LLaVA_llava_train_train.py - {'id': 'QXJ0aWZhY3Q6MTE0ODAzNDg5Nw==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxMzY4MzkxOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE0ODAzNDg5Nw==', 'versionIndex': 0}}}
+2024-08-25 23:14:50,585 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:50,585 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-08-25 23:14:50,585 INFO    SenderThread:1165665 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-25 23:14:51,062 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 23:14:51,475 INFO    SenderThread:1165665 [dir_watcher.py:finish():388] scan: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files
+2024-08-25 23:14:51,476 INFO    SenderThread:1165665 [dir_watcher.py:finish():402] scan save: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/conda-environment.yaml conda-environment.yaml
+2024-08-25 23:14:51,476 INFO    SenderThread:1165665 [dir_watcher.py:finish():402] scan save: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/wandb-metadata.json wandb-metadata.json
+2024-08-25 23:14:51,477 INFO    SenderThread:1165665 [dir_watcher.py:finish():402] scan save: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/output.log output.log
+2024-08-25 23:14:51,477 INFO    SenderThread:1165665 [dir_watcher.py:finish():402] scan save: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/wandb-summary.json wandb-summary.json
+2024-08-25 23:14:51,484 INFO    SenderThread:1165665 [dir_watcher.py:finish():402] scan save: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/requirements.txt requirements.txt
+2024-08-25 23:14:51,485 INFO    SenderThread:1165665 [dir_watcher.py:finish():402] scan save: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/config.yaml config.yaml
+2024-08-25 23:14:51,488 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 10
+2024-08-25 23:14:51,493 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 23:14:51,494 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:51,494 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-25 23:14:51,494 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:51,494 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-08-25 23:14:51,495 INFO    SenderThread:1165665 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-25 23:14:51,813 INFO    wandb-upload_1:1165665 [upload_job.py:push():130] Uploaded file /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/output.log
+2024-08-25 23:14:51,834 INFO    wandb-upload_0:1165665 [upload_job.py:push():130] Uploaded file /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/conda-environment.yaml
+2024-08-25 23:14:51,849 INFO    wandb-upload_2:1165665 [upload_job.py:push():130] Uploaded file /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/wandb-summary.json
+2024-08-25 23:14:51,850 INFO    wandb-upload_4:1165665 [upload_job.py:push():130] Uploaded file /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/config.yaml
+2024-08-25 23:14:51,866 INFO    wandb-upload_3:1165665 [upload_job.py:push():130] Uploaded file /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/files/requirements.txt
+2024-08-25 23:14:52,063 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 23:14:52,064 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 23:14:52,066 INFO    Thread-11 (_thread_body):1165665 [sender.py:transition_state():626] send defer: 11
+2024-08-25 23:14:52,067 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:52,067 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-25 23:14:52,068 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:52,068 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-08-25 23:14:52,068 INFO    SenderThread:1165665 [file_pusher.py:join():175] waiting for file pusher
+2024-08-25 23:14:52,068 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 12
+2024-08-25 23:14:52,068 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:52,068 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-25 23:14:52,069 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:52,069 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-08-25 23:14:52,069 INFO    SenderThread:1165665 [file_stream.py:finish():601] file stream finish called
+2024-08-25 23:14:52,158 INFO    SenderThread:1165665 [file_stream.py:finish():605] file stream finish is done
+2024-08-25 23:14:52,158 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 13
+2024-08-25 23:14:52,158 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:52,158 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-25 23:14:52,159 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:52,159 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-08-25 23:14:52,159 INFO    SenderThread:1165665 [sender.py:transition_state():626] send defer: 14
+2024-08-25 23:14:52,160 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: defer
+2024-08-25 23:14:52,160 INFO    HandlerThread:1165665 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-25 23:14:52,160 DEBUG   SenderThread:1165665 [sender.py:send():391] send: final
+2024-08-25 23:14:52,161 DEBUG   SenderThread:1165665 [sender.py:send():391] send: footer
+2024-08-25 23:14:52,161 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: defer
+2024-08-25 23:14:52,161 INFO    SenderThread:1165665 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-08-25 23:14:52,162 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 23:14:52,163 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: server_info
+2024-08-25 23:14:52,163 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 23:14:52,164 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: server_info
+2024-08-25 23:14:52,168 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-25 23:14:52,168 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-25 23:14:52,169 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-25 23:14:52,169 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-25 23:14:52,240 DEBUG   SenderThread:1165665 [sender.py:send_request():418] send_request: poll_exit
+2024-08-25 23:14:52,241 INFO    MainThread:1165665 [wandb_run.py:_footer_history_summary_info():4035] rendering history
+2024-08-25 23:14:52,241 INFO    MainThread:1165665 [wandb_run.py:_footer_history_summary_info():4067] rendering summary
+2024-08-25 23:14:52,241 INFO    MainThread:1165665 [wandb_run.py:_footer_sync_info():3994] logging synced files
+2024-08-25 23:14:52,242 DEBUG   HandlerThread:1165665 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-25 23:14:52,242 INFO    HandlerThread:1165665 [handler.py:finish():882] shutting down handler
+2024-08-25 23:14:53,168 INFO    WriterThread:1165665 [datastore.py:close():296] close: /home/wenhan/Projects/LISA/model/llava_new/LLaVA/llava/train/wandb/run-20240825_231444-ka08mvs3/run-ka08mvs3.wandb
+2024-08-25 23:14:53,241 INFO    SenderThread:1165665 [sender.py:finish():1631] shutting down sender
+2024-08-25 23:14:53,241 INFO    SenderThread:1165665 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-25 23:14:53,241 INFO    SenderThread:1165665 [file_pusher.py:join():175] waiting for file pusher
